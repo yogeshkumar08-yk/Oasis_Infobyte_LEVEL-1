@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temparature Converter</title>
+</head>
+<body>
+    <section>
+        <div class="container"></div>
+        <div class="dashboard">
+            <h2>Temparature Converter</h2>
+            <div class="value">
+                <label for="Fahrenheit">Enter the Temparature:</label><br>
+                <input type="number" name="temp" placeholder="values" id="values">
+            </div>
+            <div class="choices">
+                <div>
+                    <label for="type">From:</label>
+                    <select name="type" id="temp1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To:</label>
+                    <select name="type" id="temp2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="submit" id="btn" onclick="temperature()">Convert</button>
+                <button type="submit" id="btn" onclick="reset()">Reset</button>
+            </div>
+            <div class="resultss">
+                <label for="result">Result:</label>
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="credits">
+            <p>&copy; All Copyrights are reserved 2023 by yogesh kumar </p>
+        </div>
+    </section>
+    <script src="task2.js"></script>
+</body>
+</html>
